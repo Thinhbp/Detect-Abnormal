@@ -5,7 +5,7 @@ import numpy as np
 
 train_data=np.load('training.npy')
 a=train_data.shape[0]-train_data.shape[0]%10
-train_data=train_data[:1000,:,:]
+train_data=train_data[:a,:,:]
 print(train_data.shape)
 
 model=Sequential()
